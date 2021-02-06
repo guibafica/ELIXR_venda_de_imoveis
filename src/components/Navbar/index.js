@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { menuData } from '../../data/MenuData';
+import Button from '../Button';
 
 import * as S from './styles';
 
@@ -18,6 +19,10 @@ function Navbar() {
           </S.NavMenuLinks>
         ))}
       </S.NavMenu>
+
+      <S.NavBtn>
+        <Button content="Contate-Nos" primary={true} />
+      </S.NavBtn>
     </S.Nav>
   );
 }
