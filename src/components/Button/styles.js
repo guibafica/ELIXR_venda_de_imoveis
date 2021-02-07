@@ -1,5 +1,5 @@
 /* eslint-disable import/prefer-default-export */
-import styled from 'styled-components/macro';
+import styled, { css } from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 
 export const Button = styled(Link)`
@@ -28,4 +28,10 @@ export const Button = styled(Link)`
     background: none;
     color: ${({ primary }) => (primary ? '#000d1a' : '#fff')};
   }
+
+  ${(props) =>
+    props.maxWidth &&
+    css`
+      max-width: 160px;
+    `}
 `;
