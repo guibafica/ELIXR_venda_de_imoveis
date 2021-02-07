@@ -11,19 +11,23 @@ function Hero({ slides }) {
         {slides.map((slide, index) => (
           <S.HeroSlide key={index}>
             <S.HeroSlider>
-              <S.HeroImage />
+              <S.HeroImage src={slide.image} alt={slide.alt} />
 
               <S.HeroContent>
                 <h1>{slide.title}</h1>
                 <p>{slide.price}</p>
 
-                <Button content={slide.label} primary={true} maxWidth={true}>
-                  <S.Arrow />
-                </Button>
+                <Button content={slide.label} primary={false} maxWidth={true} />
               </S.HeroContent>
             </S.HeroSlider>
           </S.HeroSlide>
         ))}
+
+        <S.SliderButtons>
+          <S.PrevArrow />
+
+          <S.NextArrow />
+        </S.SliderButtons>
       </S.HeroWrapper>
     </S.HeroSection>
   );
