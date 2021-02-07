@@ -19,7 +19,7 @@ function Hero({ slides }) {
 
     timeout.current = setTimeout(nextSlide, 3000);
 
-    return function () {
+    return function clean() {
       if (timeout.current) {
         clearTimeout(timeout.current);
       }
