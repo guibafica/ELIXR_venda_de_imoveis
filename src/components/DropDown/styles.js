@@ -8,13 +8,13 @@ export const DropdownContainer = styled.div`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #cd853f; //cd853f
+  background: #f90;
   display: grid;
   align-items: center;
-  top: 0;
   left: 0;
   transition: all 0.3s ease-in-out;
-  opacity: 1;
+  opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
+  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `;
 
 export const Icon = styled.div`
@@ -39,8 +39,32 @@ export const DropdownMenu = styled.div`
   grid-template-rows: repeat(4, 80px);
   text-align: center;
   margin-bottom: 4rem;
+
+  @media screen and (max-width: 480px) {
+    grid-template-rows: repeat(4, 60px);
+  }
 `;
 
-export const DropdownLink = styled(Link)``;
+export const DropdownLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 
-export const BtnWrap = styled.div``;
+  &:hover {
+    color: #000d1a;
+    transform: scale(1.2);
+    text-decoration: underline;
+  }
+`;
+
+export const BtnWrap = styled.div`
+  display: flex;
+  justify-content: center;
+`;

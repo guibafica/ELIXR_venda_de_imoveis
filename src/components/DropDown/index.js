@@ -7,10 +7,10 @@ import Button from '../Button';
 
 import * as S from './styles';
 
-const DropDown = () => {
+const DropDown = ({ isOpen, toggle }) => {
   return (
-    <S.DropdownContainer>
-      <S.Icon>
+    <S.DropdownContainer isOpen={isOpen} onClick={toggle}>
+      <S.Icon onClick={toggle}>
         <S.CloseIcon />
       </S.Icon>
 

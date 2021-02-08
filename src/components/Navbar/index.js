@@ -5,12 +5,12 @@ import Button from '../Button';
 
 import * as S from './styles';
 
-function Navbar() {
+function Navbar({ toggle }) {
   return (
     <S.Nav>
       <S.Logo to="/">ELIXR</S.Logo>
 
-      <S.Menubars />
+      <S.Menubars onClick={toggle} />
 
       <S.NavMenu>
         {menuData.map((item, index) => (

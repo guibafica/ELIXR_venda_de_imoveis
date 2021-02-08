@@ -94,7 +94,7 @@ export const HeroContent = styled.div`
 `;
 
 export const Button = styled(Link)`
-  background: ${({ primary }) => (primary ? '#000d1a' : '#cd853f')};
+  background: ${({ primary }) => (primary ? '#000d1a' : '#f90')};
   white-space: nowrap;
   outline: none;
   border: none;
@@ -111,7 +111,7 @@ export const Button = styled(Link)`
   font-size: ${({ big }) => (big ? '20px' : '14px')};
 
   border: ${({ primary }) =>
-    primary ? '2px solid #000d1a' : '2px solid #cd853f'};
+    primary ? '2px solid #000d1a' : '2px solid #f90'};
 
   &:hover {
     transform: translateY(-2px);
@@ -140,7 +140,7 @@ export const ArrowButtons = css`
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    background: #cd853f;
+    background: #f90;
     transform: scale(1.05);
   }
 `;
