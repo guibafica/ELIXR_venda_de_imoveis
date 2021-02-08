@@ -2,6 +2,7 @@ import React from 'react';
 
 import Navbar from './components/Navbar/index';
 import Hero from './components/Hero';
+import DropDown from './components/DropDown';
 
 import { SliderData } from './data/SliderData';
 
@@ -13,6 +14,9 @@ function App() {
       <GlobalStyle />
 
       <Navbar />
+
+      <DropDown />
+
       <Hero slides={SliderData} />
     </>
   );
