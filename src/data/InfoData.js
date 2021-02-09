@@ -16,13 +16,13 @@ export const InfoData = {
 };
 
 export const InfoDataTwo = {
-  heading: 'Explore nossos belos imóveis',
+  heading: 'Designs Modernos',
   paragraphOne:
-    'Pariatur dolore ad minim qui id reprehenderit ut adipisicing aliqua nostrud cillum do. Nisi elit eu deserunt nisi dolore cillum velit dolor labore Lorem duis dolore officia enim. Incididunt ipsum est cillum amet aliqua nulla.',
+    'Elit aute aute commodo nulla in sunt culpa dolore fugiat duis excepteur.',
   paragraphTwo:
-    'Est ipsum laboris incididunt aute occaecat voluptate ea amet consectetur. Aliquip ipsum veniam nostrud amet et non est anim minim dolor ullamco consectetur. Quis ea consequat mollit aute labore anim officia mollit mollit nostrud eu dolore quis id. Id velit ullamco nostrud duis cupidatat velit anim consequat Lorem tempor.',
+    'Ad ea duis dolore dolor pariatur. Consequat occaecat nulla ut et quis voluptate eu.',
   buttonLabel: 'Visualizar Imóveis',
   image: ImageTwo,
-  reverse: false,
-  delay: 100,
+  reverse: true,
+  delay: 300,
 };

@@ -6,6 +6,7 @@ import DropDown from './components/DropDown';
 import InfoSection from './components/InfoSection';
 
 import { SliderData } from './data/SliderData';
+import { InfoData } from './data/InfoData';
 
 import GlobalStyle from './globalStyles';
 
@@ -26,7 +27,7 @@ function App() {
 
       <Hero slides={SliderData} />
 
-      <InfoSection />
+      <InfoSection {...InfoData} />
     </>
   );
 }
