@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { menuData } from '../../data/MenuData';
 import Button from '../Button';
@@ -6,8 +6,22 @@ import Button from '../Button';
 import * as S from './styles';
 
 function Navbar({ toggle }) {
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav);
+  }, []);
+
   return (
-    <S.Nav>
+    <S.Nav scrollNav={scrollNav}>
       <S.Logo to="/">ELIXR</S.Logo>
 
       <S.Menubars onClick={toggle} />
